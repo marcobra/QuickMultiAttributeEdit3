@@ -11,11 +11,8 @@ email=marcobra.ubuntu@gmail.com
 ; end of mandatory metadata
 
 ; start of optional metadata 
-
-changelog= 
-2018/10/31 v. 3.0.1 - Better filter on layer type on start edit plugin request. Thank to Carlo Nicolini for testing
-2018/09/15 v. 3.0.0  Qgis 3.X release.
-
+changelog=2018/10/31 v. 3.0.1 - Better filter on layer type on start edit plugin request. Thank to Carlo Nicolini for testing
+          2018/09/15 v. 3.0.0  Qgis 3.X release.  
 
 
 ; tags are in comma separated value format, spaces are allowed
