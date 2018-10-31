@@ -3,8 +3,8 @@ name=QuickMultiAttributeEdit3
 qgisMinimumVersion=3.0
 qgisMaximumVersion=3.99
 description=QuickMultiAttributeEdit3 plugin is a quick and handy way to edit an attribute field value for all selected elements in the current/active layer.
-about=QuickMultiAttributeEdit3 plugin is a quick and handy way to edit an attribute field value for all selected elements in the current/active layer.
-version=version 3.0.0
+about=QuickMultiAttributeEdit3 plugin is a way to edit selected elements on vector layer assigning the inserted field/value to them; optionally the plugin can remember the field and the latest inserted value.
+version=version 3.0.1
 category=Plugins
 author=Marco Braida
 email=marcobra.ubuntu@gmail.com
@@ -12,7 +12,9 @@ email=marcobra.ubuntu@gmail.com
 
 ; start of optional metadata 
 
-changelog= 2018/09/15 v. 3.0.0  Qgis 3.X release.
+changelog= 
+2018/10/31 v. 3.0.1 - Better filter on layer type on start edit plugin request.
+2018/09/15 v. 3.0.0  Qgis 3.X release.
 
 
 
@@ -30,8 +32,6 @@ icon=icons/quickmultiattributeedit_update_selected.png
 
 
 ; experimental flag
-experimental=False
-
-; deprecated flag (applies to the whole plugin and not only to the uploaded version)
+experimental=Falsedeprecated flag (applies to the whole plugin and not only to the uploaded version)
 deprecated=False
 
