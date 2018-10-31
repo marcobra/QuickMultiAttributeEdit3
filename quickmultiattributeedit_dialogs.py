@@ -53,10 +53,8 @@ class quickmultiattributeedit_update_selected_dialog(QDialog, Ui_quickmultiattri
         QDialog.__init__(self)
         self.iface = iface
         self.setupUi(self)
-        #self.buttonBox.accepted.connect(self.accepted) # questo sembra non connettere il segnale 
-        self.buttonBox.clicked.connect(self.run) # questo sembra non connettere il segnale 
 
-        #QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL("accepted()"), self.run)
+        self.buttonBox.clicked.connect(self.run) 
 
         layer = self.iface.mapCanvas().currentLayer()
         delimchars = "#"
@@ -115,8 +113,8 @@ class quickmultiattributeedit_update_selected_dialog(QDialog, Ui_quickmultiattri
     def run(self):
         delimchars = "#"
         layer = self.iface.mapCanvas().currentLayer()
-        if (layer == None):
-            infoString = str("<font color='red'> <b>No layer selected... Select a layer from the layer list...</b></font>")
+        if (layer == None or layer.type() != QgsMapLayer.VectorLayer):
+            infoString = str("<font color='red'> <b>No layer selected... or selected layer cannot be changed...</b></font>")
             self.label.setText(infoString)
             return
         if not layer.isEditable():
@@ -133,7 +131,7 @@ class quickmultiattributeedit_update_selected_dialog(QDialog, Ui_quickmultiattri
         if(layer):      
             nF = layer.selectedFeatureCount() # numero delle features selezionate
             if (nF > 0):        
-                oFeaIterator = layer.selectedFeatures() # give the selected feauter new in api2
+                oFeaIterator = layer.selectedFeatures() # give the selected feature new in api2
                 for feature in oFeaIterator: # in oFea2 there is an iterator object (api2)
                     layer.changeAttributeValue(feature.id(),nPosField,value,True) 
                     infoString = str("<font color='green'> <b>You can save or abort changes at the end of sessions.<br>Press the Save icon to save or disable the edit mode of layer without save changes to abort...</b></font>")
