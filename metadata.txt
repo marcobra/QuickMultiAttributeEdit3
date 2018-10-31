@@ -13,7 +13,7 @@ email=marcobra.ubuntu@gmail.com
 ; start of optional metadata 
 
 changelog= 
-2018/10/31 v. 3.0.1 - Better filter on layer type on start edit plugin request.
+2018/10/31 v. 3.0.1 - Better filter on layer type on start edit plugin request. Thank to Carlo Nicolini for testing
 2018/09/15 v. 3.0.0  Qgis 3.X release.
 
 
