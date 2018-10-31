@@ -25,7 +25,7 @@ def description():
     return "Edit and assing same column value in the attribute table for the selected elements"
 
 def version():
-    return "3.0.0"
+    return "3.0.1"
 
 def qgisMinimumVersion():
     return "3.0"
