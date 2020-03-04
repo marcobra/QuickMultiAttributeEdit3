@@ -11,8 +11,10 @@ email=marcobra.ubuntu@gmail.com
 ; end of mandatory metadata
 
 ; start of optional metadata 
-changelog=2020/03/04 v. 3.0.2 - Fix cancel button issue https://github.com/marcobra/QuickMultiAttributeEdit3/issues/4
-changelog=2018/10/31 v. 3.0.1 - Better filter on layer type on start edit plugin request. Thank to Carlo Nicolini for testing
+changelog=
+2020/03/04 v. 3.0.3 - Fix metadata plugin issue
+2020/03/04 v. 3.0.2 - Fix cancel button issue https://github.com/marcobra/QuickMultiAttributeEdit3/issues/4
+2018/10/31 v. 3.0.1 - Better filter on layer type on start edit plugin request. Thank to Carlo Nicolini for testing
           2018/09/15 v. 3.0.0  Qgis 3.X release.  
 
 
