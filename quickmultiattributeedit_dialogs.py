@@ -54,7 +54,7 @@ class quickmultiattributeedit_update_selected_dialog(QDialog, Ui_quickmultiattri
         self.iface = iface
         self.setupUi(self)
 
-        self.buttonBox.clicked.connect(self.run) 
+        self.accepted.connect(self.run)
 
         layer = self.iface.mapCanvas().currentLayer()
         delimchars = "#"
